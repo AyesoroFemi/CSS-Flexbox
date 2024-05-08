@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-family: sans-serif;
+}
+
+nav {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__wrapper {
+    display: flex;
+    gap: 2.2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #838383;
+}
+
+main {
+    display: flex;
+    gap: 2rem;
+}
+
+.main__wrapper {
+    width: 75%;
+}
+
+.mobile__image {
+    display: none;
+}
+
+.main__wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.sub__wrapper {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+
+.sub__wrapper > div {
+    width: 100%;
+}
+
+.sub__wrapper h1 {
+    width: 90%;
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 900;  
+    padding-top: .5rem;  
+}
+
+.sub__wrapper > div p {
+    width: 90%;
+    line-height: 1.5;
+    font-size: 17px;
+    color: #838383;
+}
+
+.sub__wrapper__info > div {
+    margin-top: 3rem;
+}
+
+.sub__wrapper__info > div a {
+    text-decoration: none;
+    background-color: #ef5e54;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.new {
+    background-color: #00001a;
+    width: 30%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.new__title{
+    font-size: 2.5rem;
+    color: #ebaa52;
+}
+.new__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.new__wrapper h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.new__wrapper p {
+    margin-top: .7rem;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #aeacac;
+
+}
+
+.new__wrapper--first, .new__wrapper--second {
+    border-bottom: 1px solid #838383;
+    padding-bottom: 3rem;
+}
+
+.cards {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+}
+
+.card  {
+    display: flex;
+    height: 100%;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.card__image {
+    width: 30%;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card__info {
+    width: 90%;
+}
+
+.card__info h1 {
+    font-size: 2rem;
+    color: #aeacac;
+}
+
+.card__info h2 {
+    font-size: 1rem;
+    padding-top: .7rem;
+    padding-bottom: .6rem;
+    font-weight: bolder;
+}
+
+.card__info p {
+    line-height: 1.5;
+    width: 75%;
+    font-size: 14px;
+    color: #838383;
+}
+
+@media screen and (max-width: 1024px) {
+    .sub__wrapper h1{
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .main__wrapper{
+        width: 100%;
+    }
+
+    .new {
+        margin-top: 3rem;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .new__container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .new__wrapper {
+        width: 100%;
+        padding-top: 3rem;
+    }
+
+    .new__wrapper--first, .new__wrapper--second {
+        border-right: 1px solid #838383;
+        border-bottom: none;
+        padding-right: 1rem;
+    }
+    
+    .card {
+        gap: 1rem;
+    }
+   
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .new__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .new__wrapper--first, .new__wrapper--second {
+        border-right: none;
+        border-bottom: 1px solid #838383;
+
+        padding-right: 1rem;
+    }
+    .cards {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .card{
+        align-items: center;
+    }
+    .sub__wrapper {
+        flex-direction: column;
+    }
+
+    .sub__wrapper h1{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .desktop__image {
+        display: none;
+    }
+    .mobile__image {
+        display: block;
+    }
+    .nav__wrapper {
+        display: none;
+    }
+    .sub__wrapper h1{
+        width: 100%;
+        font-size: 3rem;
+
+    }
+    .sub__wrapper > div p {
+        width: 100%;
+        font-size: 18px;
+    }
+    .new__wrapper--first, .new__wrapper--second {
+        padding-bottom: 3rem;
+    }
+
+    .new__wrapper h2 {
+        font-size: 20px;
+    }
+    
+    .new__wrapper p {
+        margin-top: .7rem;
+        line-height: 1.5;
+        font-size: 16px;
+    }
+}
+

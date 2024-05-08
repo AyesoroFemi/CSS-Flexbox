@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0a0c1b;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.stats > div{
+    display: flex;
+}
+
+.stats__info {
+    width: 100%;
+    padding: 4rem;
+    background-color: #1c1938;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.stats__info h1{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+span {
+    color: #9e5bc3;
+}
+
+p{
+    padding-top: .5rem;
+    width: 80%;
+    line-height: 1.5;
+    font-size: 17px;
+    color: #706e89;
+}
+
+.stats__figures{
+    width: 80%;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+.stats__figures h1{
+    font-size: 28px;
+    margin-bottom: 0px;
+}
+.stats__figures p {
+    font-size: 14px;
+    color: #706e89;
+}
+
+.stats__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    height: 450px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+@media screen and (max-width: 1297px) {
+
+    .stats {
+        height: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .stats > div{
+        flex-direction: column-reverse;
+    }
+
+    .stats__info{
+
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .stats__info h1{
+        text-align: center;
+    }
+
+    p{
+        text-align: center;
+        width: 100%;
+    }
+
+    .stats__figures{
+        margin-top: 0rem;
+        flex-direction: column;
+        width: 100%;
+        gap: 1.4rem;
+    }
+    img {
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 8px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .stats__info {
+        padding: 2rem;
+    }
+    .stats__image{
+        height: 100%;
+    }
+    .stats__info h1{
+        font-size: 26px;
+    }
+}
