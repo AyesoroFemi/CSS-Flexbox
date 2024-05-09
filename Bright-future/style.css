@@ -30,6 +30,10 @@ nav a{
     color: #838383;
 }
 
+.menu__icon {
+    display: none;
+}
+
 main {
     display: flex;
     gap: 2rem;
@@ -262,6 +266,10 @@ main {
     }
     .nav__wrapper {
         display: none;
+    }
+
+    .menu__icon {
+        display: block;
     }
     .sub__wrapper h1{
         width: 100%;
